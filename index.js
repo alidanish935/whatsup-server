@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use('/',Router)
 
-const PORT = 8000
+const PORT = 8000 ||process.env.PORT
 
 Connection()
 let users = [];
